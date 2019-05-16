@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["JamesJJ"]
   spec.email   = ["jj@fcg.fyi"]
 
-  spec.summary       = %q{Extent Numeric with method to provide duration as a human readable string}
+  spec.summary       = %q{Extend Numeric with method to provide duration as a human readable string}
   #spec.description   = %q{TODO: Write a longer description or delete this line.}
   spec.homepage      = "https://github.com/JamesJJ/ruby-duration-human"
   spec.license       = "MIT"
