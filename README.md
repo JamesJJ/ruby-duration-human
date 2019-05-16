@@ -1,5 +1,7 @@
 # duration-human
 
+[![Gem Version](https://badge.fury.io/rb/duration-human.svg)](https://badge.fury.io/rb/duration-human)
+
 Ruby module to entend Numeric class with a method to convert a number of seconds to a human readable time duration.
 
 For example:
