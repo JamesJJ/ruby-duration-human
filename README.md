@@ -15,7 +15,9 @@ For example:
 349200.duration  ==> "4 days and 1 hours"
 ```
 
-Setting `concise` to `true` in the method arguments will use initials `s`, `m`, `h`, `d` for the units, and omit the word `and`. For example:
+Setting `concise` to `true` in the method arguments will use initials `s`, `m`, `h`, `d` for the units, and omit the word `and`.
+
+For example:
 
 ```
 80.duration(concise: true)      ==> "80s"
@@ -24,4 +26,4 @@ Setting `concise` to `true` in the method arguments will use initials `s`, `m`, 
 349200.duration (concise: true) ==> "4d 1h"
 ```
 
-The thresholds for chnaging between seconds, minutes, hours and days is "2". For example, 80 is less than 2 minutes, so it is "80 seconds". 200 is more than 2 minutes, so it is "3 minutes and 20 seconds" instead of "200 seconds".
+The thresholds for changing between seconds, minutes, hours and days is "2". For example, 80 is less than 2 minutes, so it is "80 seconds". 200 is more than 2 minutes, so it is "3 minutes and 20 seconds" instead of "200 seconds".
