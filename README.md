@@ -4,6 +4,8 @@
 
 Ruby module to entend Numeric class with a method to convert a number of seconds to a human readable time duration.
 
+*Requires Ruby 2.4.0 or newer. Tested with Ruby 2.4, 2.5 & 2.6*
+
 For example:
 
 ```
@@ -27,3 +29,4 @@ For example:
 ```
 
 The thresholds for changing between seconds, minutes, hours and days is "2". For example, 80 is less than 2 minutes, so it is "80 seconds". 200 is more than 2 minutes, so it is "3 minutes and 20 seconds" instead of "200 seconds".
+

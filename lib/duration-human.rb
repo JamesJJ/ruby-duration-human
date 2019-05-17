@@ -1,6 +1,16 @@
 class Numeric
   def duration(concise: false)
-    seconds  = self.to_int
+    
+    if self.infinite?
+      return (concise ? 8734.chr(Encoding::UTF_8) : "an infinitely long time")
+    end
+
+    begin
+      seconds  = self.to_int
+    rescue FloatDomainError
+      return ""
+    end
+
     minutes  = seconds / 60
     hours = minutes / 60
     days  = hours / 24
@@ -13,6 +23,8 @@ class Numeric
       concise ? "#{minutes}m #{seconds % 60}s" : "#{minutes} minutes and #{seconds % 60} seconds"
     elsif seconds >= 0
       concise ? "#{seconds}s" : "#{seconds} seconds"
+    else
+      (concise ? "-" : "minus " ) + seconds.abs.duration(concise: concise)
     end
   end
 end
